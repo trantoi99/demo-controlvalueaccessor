@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ControlValueAccessor';
+  text: string = '';
+  error = '';
+
+  click(f: any){
+    console.log(f)
+    this.error = f.status;
+  }
 }
